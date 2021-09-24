@@ -26,3 +26,4 @@ systemd-resolve:x:106:113:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
 systemd-timesync:x:107:114:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
 uuidd:x:108:115::/run/uuidd:/usr/sbin/nologin
 tcpdump:x:109:116::/nonexistent:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin

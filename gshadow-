@@ -53,3 +53,4 @@ systemd-resolve:!::
 systemd-timesync:!::
 uuidd:!::
 tcpdump:!::
+systemd-coredump:!!::
