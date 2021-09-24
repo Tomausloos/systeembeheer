@@ -1,0 +1,11 @@
+Name: ubuntu-20.04-standard
+Version: 20.04-1
+Type: lxc
+OS: ubuntu-20.04
+Section: system
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Architecture: amd64
+Installed-Size: 671
+Infopage: http://pve.proxmox.com/wiki/Ubuntu_Disco_Standard
+Description: Ubuntu Focal (standard)
+ A small Ubuntu 20.04 Focal Fossa system including all standard packages.
