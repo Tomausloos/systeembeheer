@@ -1,11 +1,17 @@
-# To see more examples, please see
-# /usr/share/doc/sshguard/examples/whitelistfile.example
-
-# Single ipv4 or ipv6 addresses
+# comment line (a '#' as very first character)
+#   a single IPv4 and IPv6 address
 193.191.187.3
 94.224.191.222
-
-
-# Address blocks in CIDR notation
+193.191.177.6
+2a02:1800:100::41:1
+#   address blocks in CIDR notation
 127.0.0.0/8
 ::1/128
+
+
+
+
+
+
+
+
