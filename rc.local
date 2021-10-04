@@ -1,0 +1,4 @@
+#!/bin/sh -e
+arp -f /etc/ethers
+
+exit 0
