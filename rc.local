@@ -1,4 +1,4 @@
 #!/bin/sh -e
 arp -f /etc/ethers
-
+systemctl start ssh
 exit 0
