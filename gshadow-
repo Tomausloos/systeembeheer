@@ -56,3 +56,4 @@ tcpdump:!::
 systemd-coredump:!!::
 tom:!::
 check:!::
+incron:!::
