@@ -19,4 +19,5 @@ SHELL=/bin/sh
 27 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
 */15 * * * *    root ./etc/scripts/incron_config.sh
 0 */2 * * *     root rsync -aP /etc/ leia:/home/LDAP/r0792405/backup  
+0  * * * *      root find /etc/mrt/* -maxdepth 0 -mmin +240 -exec rm -rf {} \;
 #
