@@ -58,3 +58,4 @@ tom:x:1000:
 check:x:1001:
 incron:x:117:
 ntp:x:118:
+bind:x:119:
