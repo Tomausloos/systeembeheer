@@ -8,4 +8,4 @@ $TTL	604800
 ;
 @	IN	NS	ns1.uclllabs.be.
 @	IN	NS	ns2.uclllabs.be.
-@	IN	NS	ns.frederik-ausloos.sb.uclllabs.be.
+@	IN	NS	ns.sigfried-seldeslachts.sb.uclllabs.be.
