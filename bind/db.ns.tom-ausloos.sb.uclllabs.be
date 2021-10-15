@@ -1,5 +1,5 @@
 $TTL	604800
-@	IN	SOA	ns.tom-ausloos.sb.uclllabs.be. root.ns.tom-ausloos.sb.uclllabs.be. (
+@	IN	SOA	ns.tom-ausloos.sb.uclllabs.be. root.ns.tom-ausloos.sb.uclllabs.be. ( 
 			      2		; Serial
 			 604800		; Refresh
 			  86400		; Retry
