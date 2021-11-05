@@ -21,4 +21,12 @@ options {
 	dnssec-validation auto;
 
 	listen-on-v6 { any; };
+	version "not currently available";
+
+	 recursion no;
+
+	 querylog yes;
+
+	 allow-transfer { none; };
+
 };
