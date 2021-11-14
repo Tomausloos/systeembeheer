@@ -1,0 +1,6 @@
+
+// subzone config
+zone subzone.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzone.tom-ausloos.sb.uclllabs.be";
+};

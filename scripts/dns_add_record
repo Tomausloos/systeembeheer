@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Check if root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root" 
+   exit 1
+fi
+
+# Check input for zone name
+if [[ "$1" != "" ]]; then
+  domain="$1"
+	echo "Creating a zone file for $domain"
+else
+  echo "No zone name was given"
+  exit 0
+fi
+
+
+echo "" >> /etc/bind/named.conf.mrt-zones
+echo "// $domain config"  >> /etc/bind/named.conf.mrt-zones
+echo "zone $domain.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file \"/etc/bind/zones/db.$domain.tom-ausloos.sb.uclllabs.be\";
+};" >> /etc/bind/named.conf.mrt-zones
+
