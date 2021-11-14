@@ -4,3 +4,86 @@ zone subzone.tom-ausloos.sb.uclllabs.be. {
 	type master;
 	file "/etc/bind/zones/db.subzone.tom-ausloos.sb.uclllabs.be";
 };
+// subzone1 config
+zone subzone1.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzone1.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzone2 config
+zone subzone2.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzone2.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzone3 config
+zone subzone3.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzone3.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzone4 config
+zone subzone4.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzone4.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzone5 config
+zone subzone5.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzone5.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzone5 config
+zone subzone5.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzone5.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzone5 config
+zone subzone5.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzone5.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzone5 config
+zone subzone5.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzone5.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzone5 config
+zone subzone5.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzone5.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzone5 config
+zone subzone5.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzone5.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzone5 config
+zone subzone5.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzone5.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzone5 config
+zone subzone5.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzone5.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzone5 config
+zone subzone5.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzone5.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzone5 config
+zone subzone5.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzone5.tom-ausloos.sb.uclllabs.be";
+};

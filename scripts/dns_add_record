@@ -11,15 +11,46 @@ if [[ "$1" != "" ]]; then
   domain="$1"
 	echo "Creating a zone file for $domain"
 else
-  echo "No zone name was given"
+  echo "No domain name was given"
   exit 0
 fi
 
-
+# New line in mrt-zones file
 echo "" >> /etc/bind/named.conf.mrt-zones
+
+# Append config for domain given
 echo "// $domain config"  >> /etc/bind/named.conf.mrt-zones
 echo "zone $domain.tom-ausloos.sb.uclllabs.be. {
 	type master;
 	file \"/etc/bind/zones/db.$domain.tom-ausloos.sb.uclllabs.be\";
 };" >> /etc/bind/named.conf.mrt-zones
 
+echo "Appended config for $domain to mrt-zones"
+
+# Create zonefile
+
+echo  "\$TTL 4800
+@	IN	SOA	ns.$domain.tom-ausloos.sb.uclllabs.be. root.ns.tom-ausloos.sb.uclllabs.be. (
+			20005		; Serial
+			604800		; Refresh
+			600		; Retry
+			600		; Expire
+			604800 )	; Negative Cache TTl
+;
+// Name Servers
+@	IN	NS	ns.$domain.tom-ausloos.sb.uclllabs.be.
+@	IN	NS	ns.tom-ausloos.sb.uclllabs.be.
+
+// Hosts
+ns	IN	A	193.191.177.199
+@	IN	A	193.191.177.199" > /etc/bind/zones/db.$domain.tom-ausloos.sb.uclllabs.be
+
+echo "db.$domain.tom-ausloos.sb.uclllabs.be CREATED"
+
+# Delegation: NS-record for subzone in main zone
+
+echo "$domain                                IN      NS      ns.tom-ausloos.sb.uclllabs.be." >> /etc/bind/zones/db.tom-ausloos.sb.uclllabs.be
+
+echo "Added NS-record for $domain"
+
+# Increase Serial
