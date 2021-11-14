@@ -1,12 +1,18 @@
 //
 // Do any local configuration here
 //
-zone "tom-ausloos.sb.uclllabs.be" {
-	type master;
-	file "/etc/bind/zones/db.tom-ausloos.sb.uclllabs.be";
-};
 
 // Consider adding the 1918 zones here, if they are not used in your
 // organization
 //include "/etc/bind/zones.rfc1918";
 
+zone "tom-ausloos.sb.uclllabs.be" {
+        type master;
+        file "/etc/bind/zones/db.tom-ausloos.sb.uclllabs.be";
+	allow-transfer {
+		193.191.177.254; // mrt
+		193.191.176.254; // ns1.uclllabs.be
+		193.191.177.4; // ns2.uclllabs.be
+	};
+	notify yes;
+};

@@ -22,6 +22,9 @@ options {
 
 	listen-on-v6 { any; };
 	version "not currently available";
-
+	allow-recursion { any; };
+	listen-on { 193.191.177.199; };
+	notify yes;
+	allow-transfer { 193.191.176.254; 193.191.177.4; };	
 
 };
