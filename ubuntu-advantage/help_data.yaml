@@ -43,7 +43,7 @@ fips:
       FIPS 140-2 is a set of publicly announced cryptographic standards
       developed by the National Institute of Standards and Technology
       applicable for FedRAMP, HIPAA, PCI and ISO compliance use cases.
-      Note that ‘fips’ does not provide security patching. For fips certified
+      Note that "fips" does not provide security patching. For fips certified
       modules with security patches please refer to fips-updates. The modules
       are certified on Intel x86_64 and IBM Z hardware platforms for Ubuntu
       18.04 and Intel x86_64, IBM Power8 and IBM Z hardware platforms for
@@ -66,3 +66,21 @@ livepatch:
       livepatches cannot be enabled on fips-enabled systems. You can find out
       more about Ubuntu Kernel Livepatch service at
       https://ubuntu.com/security/livepatch
+
+ros:
+  help: |
+    ros provides access to a private PPA which includes security-related
+    updates for available high and critical CVE fixes for Robot Operating
+    System (ROS) packages. For access to ROS ESM and security updates, both
+    esm-infra and esm-apps services will also be enabled. To get additional
+    non-security updates, enable ros-updates. You can find out more about the
+    ROS ESM service at https://ubuntu.com/robotics/ros-esm
+
+ros-updates:
+  help: |
+    ros-updates provides access to a private PPA which includes
+    non-security-related updates for Robot Operating System (ROS) packages.
+    For full access to ROS ESM, security and non-security updates,
+    the esm-infra, esm-apps, and ros services will also be enabled. You can
+    find out more about the ROS ESM service at
+    https://ubuntu.com/robotics/ros-esm
