@@ -1,6 +1,6 @@
 $TTL	3600
 @	IN	SOA	ns.tom-ausloos.sb.uclllabs.be. root.sb.uclllabs.be. ( 
-24014; Serial
+24015; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
@@ -11,7 +11,7 @@ $TTL	3600
 @	IN	NS	ns.tom-ausloos.sb.uclllabs.be.
 @	IN	NS	ns1.uclllabs.be.
 @	IN	NS	ns2.uclllabs.be.
-
+@	IN	NS	sigfried-seldeslachts.sb.uclllabs.be.
 
 ;Hosts A records
 *					IN	A	193.191.177.199
