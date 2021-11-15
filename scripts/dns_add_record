@@ -36,12 +36,11 @@ echo  "\$TTL 4800
 			600		; Retry
 			600		; Expire
 			604800 )	; Negative Cache TTl
-;
-// Name Servers
+;Name Servers
 @	IN	NS	ns.$domain.tom-ausloos.sb.uclllabs.be.
 @	IN	NS	ns.tom-ausloos.sb.uclllabs.be.
 
-// Hosts
+;Hosts
 ns	IN	A	193.191.177.199
 @	IN	A	193.191.177.199" > /etc/bind/zones/db.$domain.tom-ausloos.sb.uclllabs.be
 
@@ -53,4 +52,16 @@ echo "$domain                                IN      NS      ns.tom-ausloos.sb.u
 
 echo "Added NS-record for $domain"
 
-# Increase Serial
+# Get current serial from main zone file 
+
+serial=$(grep "Serial" /etc/bind/zones/db.tom-ausloos.sb.uclllabs.be | tr -s [:blank] | cut -d \; -f 1)
+
+# Increment Serial and replace with old one
+
+sed -i "s/$serial/$(($serial + 1))/g" /etc/bind/zones/db.tom-ausloos.sb.uclllabs.be
+echo "restarting bind9..."
+
+# Restart bind9
+
+systemctl reload bind9
+systemctl status bind9
