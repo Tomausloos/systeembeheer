@@ -1,6 +1,6 @@
 $TTL	3600
 @	IN	SOA	ns.tom-ausloos.sb.uclllabs.be. root.sb.uclllabs.be. ( 
-24005; Serial
+			     24012         ; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
