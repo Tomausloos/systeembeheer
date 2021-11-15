@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# check if root
+if [ "$EUID" -ne 0 ]
+  then echo "Please run as root";
+  exit 1;
+fi
+
+
+if [ -n "$1" ]; then
+if [[ $1 = "-t" ]]; then
+        case $2 in
+	# When given recordtype matches 'A'
+        A )
+        echo -e "$3	IN	A	$4" >> /etc/bind/zones/db."$5"
+        DB="/etc/bind/zones/db.$5"
+	echo "added A record to db.$5"
+        ;;
+	# When given recordtype matches 'MX'
+        MX )
+        echo -e "@	IN      MX	10	$3.$5." >> /etc/bind/zones/db."$5"
+        echo -e "$3	IN      A       $4" >> /etc/bind/zones/db."$5"
+        DB="/etc/bind/zones/db.$5"
+	echo "added MX and A record to db.$5"
+        ;;
+	# When given recordtype matches 'CNAME'
+        CNAME )
+        DB="/etc/bind/zones/db.$4"
+	echo -e "$3	IN	CNAME   $4." >> "$DB"
+	echo "added CNAME record to db.$5"
+        ;;
+        esac
+        else
+        echo -e "$1     IN      A       $2" >> /etc/bind/zones/db."$3"
+        DB="/etc/bind/zones/db.$3"
+	echo "DEFAULT: added A record to db.$5"
+        fi
+
+	serial=$(grep "Serial" "$DB")
+        serialnumber=$(echo $serial | cut -d \; -f 1)
+        ((serialnumber++))
+        newserial="$serialnumber         ; Serial"
+        sed -i "s/.*Serial.*/\t\t\t     $newserial/g" "$DB"
+        echo "Incrementend Serial"
+
+        rndc reload
+        systemctl restart bind9
+	systemctl status bind9
+else
+        echo -e "Command not found: Use this format: dns_add_record -t A || CNAME || MX"
+fi
+
