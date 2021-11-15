@@ -21,6 +21,10 @@
 -A ufw6-user-input -p tcp --dport 53 -j ACCEPT -m comment --comment 'dapp_Bind9'
 -A ufw6-user-input -p udp --dport 53 -j ACCEPT -m comment --comment 'dapp_Bind9'
 
+### tuple ### allow any 443 ::/0 any ::/0 in
+-A ufw6-user-input -p tcp --dport 443 -j ACCEPT
+-A ufw6-user-input -p udp --dport 443 -j ACCEPT
+
 ### END RULES ###
 
 ### LOGGING ###
