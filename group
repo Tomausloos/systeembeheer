@@ -59,3 +59,4 @@ check:x:1001:
 incron:x:117:
 ntp:x:118:
 bind:x:119:
+mysql:x:120:
