@@ -35,6 +35,7 @@ application/x-troff-man; /usr/bin/nroff -mandoc -Tutf8; copiousoutput; print=/us
 text/troff; /usr/bin/nroff -mandoc -Tutf8; copiousoutput; print=/usr/bin/nroff -mandoc -Tutf8 | print text/plain:-
 application/x-info; /usr/bin/info -f '%s'; needsterminal; description=GNU Info document
 text/plain; more %s; needsterminal
+x-scheme-handler/snap; /usr/bin/snap handle-link %s; test=test -n "$DISPLAY"
 text/english; vim %s; needsterminal
 text/plain; vim %s; needsterminal
 text/x-makefile; vim %s; needsterminal
