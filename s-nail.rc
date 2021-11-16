@@ -231,3 +231,6 @@ retain from_ date from to cc subject message-id mail-followup-to reply-to
 #endif
 
 # s-it-mode
+set emptystart
+set folder=Maildir
+set record=+sent
