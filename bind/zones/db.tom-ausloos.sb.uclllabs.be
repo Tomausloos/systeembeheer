@@ -1,6 +1,6 @@
 $TTL	3600
 @	IN	SOA	ns.tom-ausloos.sb.uclllabs.be. root.ns.tom-ausloos.sb.uclllabs.be. ( 
-			  24016		; Serial
+			  24017		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
@@ -28,4 +28,6 @@ www1					IN	A	193.191.177.199
 www2					IN	A	193.191.177.199
 secure					IN	A	193.191.177.199
 supersecure				IN	A	193.191.177.199
+mx					IN	A	193.191.177.199
+@					IN	MX	5	mx.tom-ausloos.sb.uclllabs.be.
 	
