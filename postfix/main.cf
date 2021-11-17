@@ -28,4 +28,7 @@ virtual_alias_maps = hash:/etc/postfix/virtual
 virtual_mailbox_domains = /etc/postfix/vhosts
 virtual_mailbox_base = /var/vmail
 virtual_mailbox_maps = hash:/etc/postfix/vmaps
-
+virtual_minimum_uid = 1000
+virtual_uid_maps = static:5000
+virtual_gid_maps = static:5000
+recipient_delimiter = +
