@@ -10,7 +10,7 @@ append_dot_mydomain = no
 #delay_warning_time = 4h
 
 
-myhostname = mx.tom-ausloos.sb.uclllabs.be
+myhostname = mail.tom-ausloos.sb.uclllabs.be
 alias_maps = hash:/etc/aliases
 alias_database = hash:/etc/aliases
 mydestination = tom-ausloos.localdomain, localhost.localdomain, localhost
@@ -35,9 +35,9 @@ virtual_gid_maps = static:5000
 recipient_delimiter = +
 
 #Enable TLS Encryption when Postfix receives incoming emails
-smtpd_tls_cert_file=/etc/letsencrypt/live/mail.tom-ausloos.sb.uclllabs.be/fullchain.pem
-smtpd_tls_key_file=/etc/letsencrypt/live/mail.tom-ausloos.sb.uclllabs.be/privkey.pem
-smtpd_tls_security_level=may 
+smtpd_tls_cert_file = /etc/ssl/certs/server.crt
+smtpd_tls_key_file = /etc/ssl/private/server.key
+smtpd_tls_security_level = may
 smtpd_tls_loglevel = 1
 smtpd_tls_session_cache_database = btree:${data_directory}/smtpd_scache
 
@@ -51,3 +51,5 @@ smtpd_tls_mandatory_protocols = !SSLv2, !SSLv3, !TLSv1, !TLSv1.1
 smtpd_tls_protocols = !SSLv2, !SSLv3, !TLSv1, !TLSv1.1
 smtp_tls_mandatory_protocols = !SSLv2, !SSLv3, !TLSv1, !TLSv1.1
 smtp_tls_protocols = !SSLv2, !SSLv3, !TLSv1, !TLSv1.1
+smtp_tls_note_starttls_offer = yes
+smtpd_tls_received_header = yes
