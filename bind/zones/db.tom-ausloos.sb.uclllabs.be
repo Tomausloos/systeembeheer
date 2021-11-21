@@ -1,6 +1,6 @@
 $TTL	3600
 @	IN	SOA	ns.tom-ausloos.sb.uclllabs.be. root.ns.tom-ausloos.sb.uclllabs.be. ( 
-			  24017		; Serial
+			  24018		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
@@ -30,4 +30,5 @@ secure					IN	A	193.191.177.199
 supersecure				IN	A	193.191.177.199
 mx					IN	A	193.191.177.199
 @					IN	MX	5	mx.tom-ausloos.sb.uclllabs.be.
-	
+@					IN	TXT	_acme-challenge.tom-ausloos.sb.uclllabs.be
+_acme-challenge.tom-ausloos.sb.uclllabs.be CNAME 2bb32478-6388-48a4-a848-6dcc529febaa.auth.acme-dns.io.
