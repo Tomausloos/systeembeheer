@@ -1,0 +1,6 @@
+
+// subzonephae9u config
+zone subzonephae9u.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzonephae9u.tom-ausloos.sb.uclllabs.be";
+};
