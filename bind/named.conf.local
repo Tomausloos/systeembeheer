@@ -14,6 +14,7 @@ zone "tom-ausloos.sb.uclllabs.be" {
 		193.191.177.254; // mrt
 		193.191.176.254; // ns1.uclllabs.be
 		193.191.177.4; // ns2.uclllabs.be
+		193.191.177.194 // sigfried-seldeslachts
 	};
 	notify yes;
 };
