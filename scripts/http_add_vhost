@@ -1,0 +1,26 @@
+#!/bin/bash
+
+vhost="`echo $1 | awk -F . '{print $1}'`"
+domain="`echo $1 | awk -F . '{print $2}'`"
+
+GREP=$(grep "$domain" /etc/bind/zones/db.$domain.sb.uclllabs.be)
+if [ -z "$GREP" ];
+then
+echo "i no findings"
+else
+	mkdir /var/www/$vhost.$domain
+	touch /var/www/$vhost.$domain/index.html
+	echo 'welcome '$vhost.$domain > /var/www/$vhost.$domain/index.html
+
+	touch /etc/apache2/sites-available/$vhost.$domain.conf
+	echo "<VirtualHost *:80>
+        	ServerName $1
+        	DocumentRoot /var/www/$vhost.$domain
+        	LogLevel info
+        	ErrorLog "${APACHE_LOG_DIR}"/$vhost.$domain-error.log
+        	CustomLog "${APACHE_LOG_DIR}"/$vhost.$domain-access.log combined
+	</VirtualHost>" > /etc/apache2/sites-available/$vhost.$domain.conf
+
+	a2ensite $vhost.$domain
+	systemctl reload apache2
+fi
