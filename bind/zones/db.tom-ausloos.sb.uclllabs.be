@@ -1,6 +1,6 @@
 $TTL	3600
 @	IN	SOA	ns.tom-ausloos.sb.uclllabs.be. root.ns.tom-ausloos.sb.uclllabs.be. ( 
-			  24030		; Serial
+			  24031		; Serial
 			   1200		; Refresh
 			    120		; Retry
 			2419200		; Expire
@@ -27,5 +27,7 @@ supersecure				IN	A	193.191.177.199
 mx					IN	A	193.191.177.199
 @					IN	MX	5	mx.tom-ausloos.sb.uclllabs.be.
 @					IN	CAA	0 issue "letsencrypt.org"
+@					IN	CAA	0 iodef "mailto:r0792405@ucll.be"
 _acme-challenge.secure	1		IN      TXT	Khql3Fa85uMtvLmDJn9fVX7dSj24do2q5nGwXLoXIn0
 _acme-challenge.supersecure 1		IN	TXT	O2goriC4_xPWFfIakQi7p5VzgiAl_7WtrY-rGpBOKrc
+
