@@ -1,10 +1,10 @@
 $TTL	3600
 @	IN	SOA	ns.tom-ausloos.sb.uclllabs.be. root.ns.tom-ausloos.sb.uclllabs.be. ( 
-			  24019		; Serial
-			 604800		; Refresh
-			  86400		; Retry
+			  24027		; Serial
+			   1200		; Refresh
+			    120		; Retry
 			2419200		; Expire
-			 604800       ) ; Negative Cache TTL
+			  60480       ) ; Negative Cache TTL
 
 
 ;Name Servers
@@ -26,4 +26,5 @@ secure					IN	A	193.191.177.199
 supersecure				IN	A	193.191.177.199
 mx					IN	A	193.191.177.199
 @					IN	MX	5	mx.tom-ausloos.sb.uclllabs.be.
-tom-ausloos.sb.uclllabs.be.		IN	CAA	0 issue "letsencrypt.org"
+@					IN	CAA	0 issue "letsencrypt.org"
+_acme-challenge		1		IN      TXT	uZGM51LMAQz6haOtZ-XWEprT066bAhcMllTfDqLEzaQ
