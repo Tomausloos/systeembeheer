@@ -4,3 +4,249 @@ zone subzonephae9u.tom-ausloos.sb.uclllabs.be. {
 	type master;
 	file "/etc/bind/zones/db.subzonephae9u.tom-ausloos.sb.uclllabs.be";
 };
+
+// subzonedae5ie config
+zone subzonedae5ie.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzonedae5ie.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzonethaeb6 config
+zone subzonethaeb6.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzonethaeb6.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzonequei3a config
+zone subzonequei3a.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzonequei3a.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzoneooz4ih config
+zone subzoneooz4ih.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzoneooz4ih.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzoneoeph5o config
+zone subzoneoeph5o.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzoneoeph5o.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzonepha3oo config
+zone subzonepha3oo.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzonepha3oo.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzoneahhab3 config
+zone subzoneahhab3.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzoneahhab3.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzoneakah3a config
+zone subzoneakah3a.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzoneakah3a.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzonephues2 config
+zone subzonephues2.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzonephues2.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzoneiewah1 config
+zone subzoneiewah1.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzoneiewah1.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzoneangi6v config
+zone subzoneangi6v.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzoneangi6v.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzoneeefip0 config
+zone subzoneeefip0.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzoneeefip0.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzoneaoyai9 config
+zone subzoneaoyai9.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzoneaoyai9.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzoneohsh0n config
+zone subzoneohsh0n.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzoneohsh0n.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzoneohr0fi config
+zone subzoneohr0fi.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzoneohr0fi.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzoneiek6eo config
+zone subzoneiek6eo.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzoneiek6eo.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzonebieh4o config
+zone subzonebieh4o.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzonebieh4o.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzoneoj5mae config
+zone subzoneoj5mae.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzoneoj5mae.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzoneih6xoi config
+zone subzoneih6xoi.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzoneih6xoi.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzoneoqu2ap config
+zone subzoneoqu2ap.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzoneoqu2ap.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzonezued1y config
+zone subzonezued1y.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzonezued1y.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzoneahch5o config
+zone subzoneahch5o.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzoneahch5o.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzoneshee3e config
+zone subzoneshee3e.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzoneshee3e.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzoneyohtu9 config
+zone subzoneyohtu9.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzoneyohtu9.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzoneoi8ie8 config
+zone subzoneoi8ie8.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzoneoi8ie8.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzoneoovee3 config
+zone subzoneoovee3.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzoneoovee3.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzoneko9shu config
+zone subzoneko9shu.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzoneko9shu.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzoneoa7vae config
+zone subzoneoa7vae.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzoneoa7vae.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzonechui5e config
+zone subzonechui5e.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzonechui5e.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzonebo0ohz config
+zone subzonebo0ohz.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzonebo0ohz.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzonecee4wa config
+zone subzonecee4wa.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzonecee4wa.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzoneohyah2 config
+zone subzoneohyah2.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzoneohyah2.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzoneue2iem config
+zone subzoneue2iem.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzoneue2iem.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzonerae2ku config
+zone subzonerae2ku.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzonerae2ku.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzonewuthu2 config
+zone subzonewuthu2.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzonewuthu2.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzonexej7ez config
+zone subzonexej7ez.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzonexej7ez.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzonefo7lu2 config
+zone subzonefo7lu2.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzonefo7lu2.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzonecish4h config
+zone subzonecish4h.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzonecish4h.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzonequai4t config
+zone subzonequai4t.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzonequai4t.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzoneoquea7 config
+zone subzoneoquea7.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzoneoquea7.tom-ausloos.sb.uclllabs.be";
+};
+
+// subzonezohm4u config
+zone subzonezohm4u.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzonezohm4u.tom-ausloos.sb.uclllabs.be";
+};
