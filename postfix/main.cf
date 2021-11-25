@@ -30,4 +30,20 @@ virtual_minimum_uid = 998
 virtual_uid_maps = static:998
 virtual_gid_maps = static:998
 
+smtp_use_tls = yes
+smtp_tls_security_level = may
+smtp_tls_session_cache_database = btree:${data_directory}/smtp_scache
 
+smtpd_use_tls = yes
+smtpd_tls_security_level = may
+smtpd_tls_session_cache_database = btree:${data_directory}/smtpd_scache
+smtpd_tls_cert_file = /etc/letsencrypt/live/tom-ausloos.sb.uclllabs.be/fullchain.pem
+smtpd_tls_key_file = /etc/letsencrypt/live/tom-ausloos.sb.uclllabs.be/privkey.pem
+smtpd_relay_restrictions = permit_mynetworks, permit_sasl_authenticated,  reject_unauth_destination
+
+smtpd_sasl_auth_enable = yes
+smtpd_sasl_type = dovecot
+smtpd_sasl_path = private/auth
+
+inet_interfaces = all
+inet_protocols = all
