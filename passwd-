@@ -33,4 +33,4 @@ ntp:x:110:118::/nonexistent:/usr/sbin/nologin
 bind:x:111:119::/var/cache/bind:/usr/sbin/nologin
 mysql:x:112:120:MySQL Server,,,:/nonexistent:/bin/false
 dovecot:x:113:121:Dovecot mail server,,,:/usr/lib/dovecot:/usr/sbin/nologin
-dovenull:x:114:122::/nonexistent:/usr/sbin/nologin
+dovenull:x:114:122:Dovecot login user,,,:/nonexistent:/usr/sbin/nologin
