@@ -1,26 +1,45 @@
 #!/bin/bash
 
-vhost="`echo $1 | awk -F . '{print $1}'`"
+#Extract subdomain from domain
+subdomain="`echo $1 | awk -F . '{print $1}'`"
 domain="`echo $1 | awk -F . '{print $2}'`"
 
-GREP=$(grep "$domain" /etc/bind/zones/db.$domain.sb.uclllabs.be)
-if [ -z "$GREP" ];
-then
-echo "i no findings"
+echo "subdomain = $subdomain and domain = $domain"
+
+#Check if domain already exists
+if [ -d "/var/www/$subdomain" ]; then
+        echo "Error: Domain already exists. Aborting..."
+        exit
+fi
+#Check if domain is valid
+if [[ $1 != $subdomain.tom-ausloos.sb.uclllabs.be ]]; then
+        echo "Error: Invalid Domain. Aborting..."
+        exit
 else
-	mkdir /var/www/$vhost.$domain
-	touch /var/www/$vhost.$domain/index.html
-	echo 'welcome '$vhost.$domain > /var/www/$vhost.$domain/index.html
 
-	touch /etc/apache2/sites-available/$vhost.$domain.conf
-	echo "<VirtualHost *:80>
-        	ServerName $1
-        	DocumentRoot /var/www/$vhost.$domain
-        	LogLevel info
-        	ErrorLog "${APACHE_LOG_DIR}"/$vhost.$domain-error.log
-        	CustomLog "${APACHE_LOG_DIR}"/$vhost.$domain-access.log combined
-	</VirtualHost>" > /etc/apache2/sites-available/$vhost.$domain.conf
+#Create documentroot for subdomain with welcome message in index page
+ 	mkdir /var/www/$subdomain
+ 	touch /var/www/$subdomain/index.html
+ 	echo 'welcome '$subdomain > /var/www/$subdomain/index.html
 
-	a2ensite $vhost.$domain
-	systemctl reload apache2
+#Create vhost
+ 	touch /etc/apache2/sites-available/$subdomain.$domain.conf
+ 	echo "<VirtualHost *:80>
+         	ServerName $1
+         	DocumentRoot /var/www/$subdomain
+         	LogLevel info
+         	ErrorLog "${APACHE_LOG_DIR}"/$subdomain.$domain-error.log
+         	CustomLog "${APACHE_LOG_DIR}"/$subdomain.$domain-access.log combined
+ 	</VirtualHost>" > /etc/apache2/sites-available/$subdomain.$domain.conf
+
+ 	a2ensite $subdomain.$domain
+
+# Add record to zonefile
+	sudo dns_add_record -t A $subdomain 193.191.177.199 tom-ausloos.sb.uclllabs.be
+
+# Reload changed services
+	systemctl restart bind9
+	systemctl restart apache2
+
+echo "Created V-host and documentroot and added record to zone"
 fi
