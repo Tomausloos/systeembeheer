@@ -1,0 +1,6 @@
+
+// subzonekee4ae config
+zone subzonekee4ae.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzonekee4ae.tom-ausloos.sb.uclllabs.be";
+};
