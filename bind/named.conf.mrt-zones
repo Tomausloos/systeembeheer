@@ -502,3 +502,9 @@ zone subzoneiki9ae.tom-ausloos.sb.uclllabs.be. {
 	type master;
 	file "/etc/bind/zones/db.subzoneiki9ae.tom-ausloos.sb.uclllabs.be";
 };
+
+// subzonemuph3u config
+zone subzonemuph3u.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzonemuph3u.tom-ausloos.sb.uclllabs.be";
+};
