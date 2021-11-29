@@ -1,6 +1,6 @@
 $TTL	3600
 @	IN	SOA	ns.tom-ausloos.sb.uclllabs.be. root.ns.tom-ausloos.sb.uclllabs.be. ( 
-			     24293         ; Serial
+			     24294         ; Serial
 			   1200		; Refresh
 			    120		; Retry
 			2419200		; Expire
@@ -29,6 +29,7 @@ mx					IN	A	193.191.177.199
 @					IN	CAA	0 issue "letsencrypt.org"
 @					IN	CAA	0 iodef "mailto:r0792405@ucll.be"
 @					IN	AAAA	2001:6a8:2880:a077::c7
+mx					IN	AAAA	2001:6a8:2880:a077::c7
 ns.tom-ausloos.sb.uclllabs.be.		IN	AAAA	2001:6a8:2880:a077::c7
 subzoneeekie9                                IN      NS      ns.tom-ausloos.sb.uclllabs.be.
 iu3get.subzoneeekie9	IN	A	193.191.177.199
