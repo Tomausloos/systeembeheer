@@ -1,6 +1,6 @@
 $TTL	3600
 @	IN	SOA	ns.tom-ausloos.sb.uclllabs.be. root.ns.tom-ausloos.sb.uclllabs.be. ( 
-			     24290         ; Serial
+			     24292         ; Serial
 			   1200		; Refresh
 			    120		; Retry
 			2419200		; Expire
@@ -198,3 +198,5 @@ subzoneiki9ae                                IN      NS      ns.tom-ausloos.sb.u
 ood5oo.subzoneiki9ae	IN	A	193.191.177.199
 subzonemuph3u                                IN      NS      ns.tom-ausloos.sb.uclllabs.be.
 ang6ri.subzonemuph3u	IN	A	193.191.177.199
+subzonelaneo6                                IN      NS      ns.tom-ausloos.sb.uclllabs.be.
+alah2i.subzonelaneo6	IN	A	193.191.177.199

@@ -508,3 +508,9 @@ zone subzonemuph3u.tom-ausloos.sb.uclllabs.be. {
 	type master;
 	file "/etc/bind/zones/db.subzonemuph3u.tom-ausloos.sb.uclllabs.be";
 };
+
+// subzonelaneo6 config
+zone subzonelaneo6.tom-ausloos.sb.uclllabs.be. {
+	type master;
+	file "/etc/bind/zones/db.subzonelaneo6.tom-ausloos.sb.uclllabs.be";
+};
