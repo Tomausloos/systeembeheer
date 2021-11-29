@@ -1,5 +1,6 @@
 mrt/
 incron.d/
 /etc/bind/named.conf.mrt-zones
-
+/etc/bind/zones/db.sub*
+/etc/apache2/sites-available/
 
