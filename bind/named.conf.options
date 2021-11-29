@@ -20,7 +20,7 @@ options {
 	//========================================================================
 	dnssec-validation auto;
 
-	listen-on-v6 { any; };
+	listen-on-v6 port 53 { any; };
 	version "not currently available";
 	allow-recursion { any; };
 	listen-on { 193.191.177.199; };
