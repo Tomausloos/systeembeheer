@@ -1,12 +1,3 @@
 iface wlan0 inet dhcp
 post-up arp -f /etc/ethers
 
-iface eth0 inet6 static
-
-pre-up modprobe ipv6
-
-address 2001:6a8:2880:a077::c7
-
-netmask 64
-
-gateway 2001:6a8:2880:a021::6

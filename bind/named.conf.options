@@ -19,8 +19,7 @@ options {
 	// you will need to update your keys.  See https://www.isc.org/bind-keys
 	//========================================================================
 	dnssec-validation auto;
-
-	listen-on-v6 port 53 { any; };
+	listen-on-v6 { any; };
 	version "not currently available";
 	allow-recursion { any; };
 	listen-on { 193.191.177.199; };
